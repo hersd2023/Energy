@@ -786,6 +786,7 @@ height: 100%;
     margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 /*** Video ***/
+/*** Video ***/
 .video-item {
     position: relative;
     border-radius: 8px;
@@ -797,4 +798,9 @@ height: 100%;
     width: 100%;
     height: auto;
     display: block;
+}
+
+#videos {
+    height: 90vh; /* Ocupa el 100% de la altura de la ventana */
+   
 }
