@@ -1,4 +1,31 @@
 /********** Template CSS **********/
+.containerrgb {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rgb-button {
+    background-color: #2fa3dd ;/* Color inicial: Rojo */
+    border: none;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 20px 30px;
+    font-size: 18px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+.rgb-button:hover {
+    background-color: rgb(38, 0, 255); /* Cambia a Verde al pasar el cursor */
+    transform: scale(0.7);
+
+}
+
 
 .navbar-brand h1 {
     color: rgb(0, 0, 0); /* Color del texto "Smart" */
