@@ -235,14 +235,14 @@ h6,
 }
 
 .carousel-caption p {
-    font-size: 1.5rem; /* Ajusta el tamaño de fuente según sea necesario */
+    font-size: 4.5rem; /* Ajusta el tamaño de fuente según sea necesario */
     font-weight: 500;
     text-transform: uppercase;
     color: #007bff;
 }
 
 .carousel-caption h1 {
-    font-size: 3rem; /* Ajusta el tamaño de fuente según sea necesario */
+    font-size: 4.5rem; /* Ajusta el tamaño de fuente según sea necesario */
     font-weight: 700;
 }
 
