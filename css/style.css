@@ -1,4 +1,16 @@
 /********** Template CSS **********/
+
+.navbar-brand h1 {
+    color: rgb(0, 0, 0); /* Color del texto "Smart" */
+    margin: 0; /* Para eliminar cualquier margen que tenga */
+    font-family: Georgia;
+    font-size: 28px;
+}
+
+.navbar-brand h1 span {
+    color: blue; /* Color del texto "Energy" */
+}
+
 :root {
     --primary: #2fa3dd;
     --secondary: #5F656F;
@@ -120,7 +132,7 @@ h6,
     height: 75px;
     display: flex;
     align-items: center;
-    background: var(--primary);
+    background: rgb(255, 255, 255);
 }
 
 .navbar .navbar-brand::after {
@@ -131,7 +143,7 @@ h6,
     top: 0;
     right: -25px;
     transform: skewX(-30deg);
-    background-color: var(--primary);
+    background-color: white;
 }
 
 .navbar .navbar-nav .nav-link {
