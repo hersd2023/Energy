@@ -189,9 +189,19 @@ h6,
 
 
 /*** Header ***/
+/* General Styles */
+.video-container {
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
 .carousel-caption {
-    top: 50px;
-    height: 96.4%;
+    top: 0px;
+    height: 99%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -201,31 +211,59 @@ h6,
     z-index: 1;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 15%;
+.carousel-caption .container {
+    position: relative;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 3.5rem;
-    height: 3.5rem;
-    background-color: var(--primary);
-    border: 15px solid var(--primary);
-    border-radius: 3.5rem;
+.carousel-caption p,
+.carousel-caption h1,
+.carousel-caption a {
+    animation-duration: 1s;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #007bff;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.carousel-caption a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
 }
 
 @media (max-width: 768px) {
-    #header-carousel .carousel-item {
-        position: relative;
-        min-height: 450px;
+    .carousel-caption p {
+        font-size: 1rem;
     }
     
-    #header-carousel .carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
+    .carousel-caption h1 {
+        font-size: 1.75rem;
+    }
+    
+    .carousel-caption a {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    /* Adjust the video container for smaller screens */
+    .video-container video {
         object-fit: cover;
+    }
+
+    /* Adjust the carousel item min-height for smaller screens */
+    .carousel-item {
+        min-height: 300px;
     }
 }
 
