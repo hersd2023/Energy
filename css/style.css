@@ -4,6 +4,18 @@
     --dark: #37474f;      /* Azul oscuro para texto */
 }
 
+
+.about-video {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; 
+}
+
+.video-fluid {
+    width: 100%;
+    height: auto;
+}
+
 h1,
 h2,
 .h1,
