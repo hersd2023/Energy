@@ -130,7 +130,7 @@
     <section class="informacion">
         <div class="company-info-container">
             <div class="text-section">
-                <h1>Quienes Somos? </h1>
+                <h1>¿QUIÉNES SOMOS? </h1>
                 <p class="mb-4"> Somos una empresa EPC <strong>(Ingeniería, Suministro y Construcción),</strong> con un manejo especializado en la gerencia de proyectos, basado en los estándares del Project Management Institute, realizamos la ejecución y puesta en marcha de los proyectos EPC, cumpliendo así con los tiempos y presupuestos establecidos desde la formulación del proyecto. Es por esto, que en Colombia contamos con una amplia experiencia en proyectos solares comerciales, industriales y residenciales. En Smart Energy Ing. <strong>Contamos con más de 3MW construidos en diferentes regiones del País, realizando así proyectos industriales como más de 2.4Mw instalados, comerciales con más de 1Mw y residenciales con más de 180kw.</strong>  Nuestra empresa otorga certificaciones en calidad para la buena puesta en marcha de los proyectos. </p>
             </div>
             <div class="image-section">
@@ -138,41 +138,79 @@
             </div>
         </div>
         <style>
-        /* Reseteo de estilos básicos */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Estilo del contenedor */
-        .company-info-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
-
-        /* Estilo de la sección de texto */
-        .text-section {
-            flex: 1;
-            padding-right: 20px;
-        }
-
-        /* Estilo de la sección de imagen */
-        .image-section {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end; /* Alinea la imagen a la derecha */
-        }
-
-        /* Estilo de la imagen */
-        .image-section img {
-            max-width: 80%; /* Ajusta el tamaño de la imagen */
-            height: auto;
-            border-radius: 8px;
-        }
-    </style>
+            /* Reseteo de estilos básicos */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            /* Estilo del contenedor */
+            .company-info-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start; /* Alinea los elementos hacia arriba */
+                padding: 20px;
+            }
+    
+            /* Estilo de la sección de texto */
+            .text-section {
+                flex: 1;
+                padding-right: 20px;
+            }
+    
+            /* Estilo de la sección de imagen */
+            .image-section {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end; /* Alinea la imagen a la derecha */
+            }
+    
+            /* Estilo de la imagen */
+            .image-section img {
+                max-width: 80%; /* Ajusta el tamaño de la imagen */
+                height: auto;
+                border-radius: 8px;
+            }
+    
+            /* Estilo del texto */
+            .text-section h1 {
+                font-size: 2em; /* Ajusta el tamaño del encabezado */
+            }
+    
+            .text-section p {
+                font-size: 1.2em; /* Ajusta el tamaño del texto */
+            }
+    
+            /* Media queries para diseño responsive */
+            @media (max-width: 768px) {
+                .company-info-container {
+                    flex-direction: column;
+                    text-align: center;
+                }
+    
+                .text-section {
+                    padding-right: 0;
+                    padding-bottom: 20px;
+                }
+    
+                .image-section {
+                    justify-content: center; /* Centra la imagen en pantallas más pequeñas */
+                }
+    
+                .image-section img {
+                    max-width: 100%; /* Aumenta el tamaño de la imagen en pantallas más pequeñas */
+                }
+    
+                .text-section h1 {
+                    font-size: 1.8em; /* Ajusta el tamaño del encabezado para pantallas pequeñas */
+                }
+    
+                .text-section p {
+                    font-size: 1.1em; /* Ajusta el tamaño del texto para pantallas pequeñas */
+                }
+            }
+        </style>
         </section>
 
 
@@ -284,7 +322,7 @@
 
     <!-- Mision Vision  -->
     <div class="container-xxl py-5">
-        <div class="row g-5">
+        <div class="row g-5 justify-content-center align-items-center">
             <div class="col-lg-6 wow fadeInUp text-section" data-wow-delay="0.1s">
                 <h1 class="display-5 mb-4">Nuestra Misión</h1>
                 <p class="mb-4">Construir, operar y mantener las instalaciones de sistemas solares
@@ -300,10 +338,54 @@
                     satisfacción de sus clientes.
                 </p>
             </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.1s">
                 <img class="img-fluid w-50" src="img/elegirnos.jpg" alt="">
             </div>
         </div>
+        <style>
+            /* Estilos para centrar el contenido */
+            .container-xxl {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+    
+            .row {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+    
+            .text-section h1 {
+                font-size: 2em;
+            }
+    
+            .text-section p {
+                font-size: 1.2em;
+            }
+    
+            /* Media queries para diseño responsive */
+            @media (max-width: 768px) {
+                .row {
+                    flex-direction: column;
+                }
+    
+                .text-section h1 {
+                    font-size: 1.8em;
+                }
+    
+                .text-section p {
+                    font-size: 1.1em;
+                }
+    
+                .img-fluid {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
     </div>
 
 
