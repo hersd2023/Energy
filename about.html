@@ -128,51 +128,49 @@
     <!-- Quienes somos  -->
 
     <section class="informacion">
-        <div class="contenedor-independiente">
-            <h2 class="display-5 mb-4">Quienes somos ?</h2>
-            <p class="mb-4">
-                Somos una empresa EPC <strong>(Ingeniería, Suministro y Construcción),</strong> con un manejo especializado en la gerencia de proyectos, basado en los estándares del Project Management Institute, realizamos la ejecución y puesta en marcha de los proyectos EPC, cumpliendo así con los tiempos y presupuestos establecidos desde la formulación del proyecto. Es por esto, que en Colombia contamos con una amplia experiencia en proyectos solares comerciales, industriales y residenciales. En Smart Energy Ing. <strong>Contamos con más de 3MW construidos en diferentes regiones del País, realizando así proyectos industriales como más de 2.4Mw instalados, comerciales con más de 1Mw y residenciales con más de 180kw.</strong>  Nuestra empresa otorga certificaciones en calidad para la buena puesta en marcha de los proyectos.
-            </p>
-            
+        <div class="company-info-container">
+            <div class="text-section">
+                <h1>Quienes Somos? </h1>
+                <p class="mb-4"> Somos una empresa EPC <strong>(Ingeniería, Suministro y Construcción),</strong> con un manejo especializado en la gerencia de proyectos, basado en los estándares del Project Management Institute, realizamos la ejecución y puesta en marcha de los proyectos EPC, cumpliendo así con los tiempos y presupuestos establecidos desde la formulación del proyecto. Es por esto, que en Colombia contamos con una amplia experiencia en proyectos solares comerciales, industriales y residenciales. En Smart Energy Ing. <strong>Contamos con más de 3MW construidos en diferentes regiones del País, realizando así proyectos industriales como más de 2.4Mw instalados, comerciales con más de 1Mw y residenciales con más de 180kw.</strong>  Nuestra empresa otorga certificaciones en calidad para la buena puesta en marcha de los proyectos. </p>
+            </div>
+            <div class="image-section">
+                <img src="img/Quienes somos.png" alt="">
+            </div>
         </div>
         <style>
-            /* Estilos generales de la página */
-            body {
-                font-family: Arial, sans-serif;
+            /* Reseteo de estilos básicos */
+            * {
                 margin: 0;
                 padding: 0;
-                background-color: #f4f4f4; /* Color de fondo general */
+                box-sizing: border-box;
             }
     
-            /* Estilos específicos para el contenedor independiente */
-            .informacion {
-                padding: 20px;
+            /* Estilo del contenedor */
+            .company-info-container {
                 display: flex;
-                justify-content: center;
-            }
-    
-            .contenedor-independiente {
-                background-color: transparent; /* Fondo transparente para que no tenga fondo blanco */
+                justify-content: space-between;
+                align-items: center;
                 padding: 20px;
-                max-width: 800px; /* Ancho máximo del contenedor */
-                margin: 0 auto; /* Centra el contenedor dentro del contenedor padre */
-                position: relative; /* Necesario para posicionar la barra azul en la parte inferior */
+                border: 1px solid #ddd;
             }
     
-            .contenedor-independiente::after {
-                content: "";
-                display: block;
-                height: 5px; /* Altura de la barra */
-                background-color: #0033cc; /* Color azul para la barra */
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de profundidad */
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
+            /* Estilo de la sección de texto */
+            .text-section {
+                flex: 1;
+                padding-right: 20px;
             }
     
+            /* Estilo de la sección de imagen */
+            .image-section {
+                flex: 1;
+            }
     
-     
+            /* Estilo de la imagen */
+            .image-section img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
         </style>
         </section>
 
