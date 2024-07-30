@@ -661,6 +661,21 @@
     background-position: right center; /* Posiciona la imagen en la parte derecha */
     height: 500px; /* Ajusta la altura de la tercera parte */
 }
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Coloca los elementos uno encima del otro */
+    }
+    .image-part {
+        height: 200px; /* Ajusta la altura en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-part {
+        height: 150px; /* Ajusta la altura aún más en pantallas muy pequeñas */
+    }
+}
     </style>
 
 <!-- Contact Start -->
