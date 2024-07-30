@@ -57,7 +57,7 @@
             <div class="col-lg-6 text-end">
                 <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
                     <span class="fs-5"><i class="fa fa-phone-alt me-2" style="color:#02245B ;"></i></span>
-                    <span class="fs" style="color:#02245B ;">+57 310 6977028</span>
+                    <span class="fs" style="color:#0f2e61 ;">+57 310 6977028</span>
                 </div>
             </div>
         </div>
@@ -614,6 +614,54 @@
         </div>
     </div>
     <!-- Testimonial End -->
+
+
+
+    <div class="image-container">
+        <div class="image-part part1"></div>
+        <div class="image-part part2"></div>
+        <div class="image-part part3"></div>
+    </div>
+
+    <style>
+    
+    .image-container {
+    display: flex;
+    background-color: #0e052c; /* Color de fondo del contenedor */
+    padding: 0; /* Sin espacio alrededor de las imágenes */
+    border: 1px solid #ccc; /* Borde opcional */
+    max-width: 100%; /* Ajusta el ancho máximo del contenedor al 100% */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+.image-part {
+    background-size: contain; /* Ajusta el tamaño de fondo para contener la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    height: 600px; /* Altura fija de las partes de la imagen */
+}
+
+.part1 {
+    flex: 1;
+    background-image: url('/img/PRESENTACIÓN\ \(1\)_page-0007\ -\ copia.jpg'); /* URL de la primera parte de la imagen */
+    background-position: left center; /* Posiciona la imagen en la parte izquierda */
+    
+}
+
+.part2 {
+    
+    background-image: url('/img/parte\ dos.jpg'); /* URL de la segunda parte de la imagen */
+    background-position: center center; /* Posiciona la imagen en el centro */
+    height: 500px;
+}
+
+.part3 {
+    flex: 0.5;
+    background-image: url('/img/parte-3.jpg'); /* URL de la tercera parte de la imagen */
+    background-position: right center; /* Posiciona la imagen en la parte derecha */
+    height: 500px; /* Ajusta la altura de la tercera parte */
+}
+    </style>
 
 <!-- Contact Start -->
 <div class="container-xxl py-5">

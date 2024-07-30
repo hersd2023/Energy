@@ -325,7 +325,32 @@ h6,
     }
 }
 
+.image-container {
+    display: flex;
+    background-color: #120d4e; /* Color de fondo del contenedor */
+    padding: 10px; /* Espacio alrededor de las imágenes */
+    border: 1px solid #111050; /* Borde opcional */
+    max-width: 600px; /* Ajusta el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
 
+.image-part {
+    flex: 1; /* Cada parte de la imagen ocupa el mismo espacio */
+    background-size: cover; /* Ajusta el tamaño de fondo para cubrir el div */
+    background-position: center; /* Centra la imagen en el div */
+}
+
+.part1 {
+    background-image: url('/img/PRESENTACIÓN\ \(1\)_page-0007\ -\ copia.jpg'); /* URL de la primera parte de la imagen */
+}
+
+.part2 {
+    background-image: url('/img/parte\ dos.jpg'); /* URL de la segunda parte de la imagen */
+}
+
+.part3 {
+    background-image: url('/img/parte-3.jpg'); /* URL de la tercera parte de la imagen */
+}
 
 .page-header {
     background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
