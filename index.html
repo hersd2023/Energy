@@ -633,12 +633,14 @@
     max-width: 100%; /* Ajusta el ancho máximo del contenedor al 100% */
     margin: 0 auto; /* Centra el contenedor en la página */
     height: auto; /* Ajusta la altura automáticamente */
+
 }
 
 .image-part {
     background-size: contain; /* Ajusta el tamaño de fondo para contener la imagen */
     background-repeat: no-repeat; /* No repetir la imagen */
     height: 600px; /* Altura fija de las partes de la imagen */
+    display: flex;
 }
 
 .part1 {
@@ -662,20 +664,7 @@
     height: 500px; /* Ajusta la altura de la tercera parte */
 }
 
-@media (max-width: 768px) {
-    .image-container {
-        flex-direction: column; /* Coloca los elementos uno encima del otro */
-    }
-    .image-part {
-        height: 200px; /* Ajusta la altura en pantallas más pequeñas */
-    }
-}
 
-@media (max-width: 480px) {
-    .image-part {
-        height: 150px; /* Ajusta la altura aún más en pantallas muy pequeñas */
-    }
-}
     </style>
 
 <!-- Contact Start -->
