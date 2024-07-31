@@ -616,6 +616,9 @@
     <!-- Testimonial End -->
 
 
+    <!-- Casos de exito -->
+
+<section>
     <div class="image-container">
         <div class="image-part part1">
             <img src="/img/PRESENTACIÓN (1)_page-0007 - copia.jpg" alt="Parte 1">
@@ -630,45 +633,77 @@
 
 
     <style>
-    .image-container {
-    display: flex;
-    background-color: #051522; /* Color de fondo del contenedor */
-    padding: 0; /* Sin espacio alrededor de las imágenes */
-    border: 1px solid #ccc; /* Borde opcional */
-    max-width: 100%; /* Ajusta el ancho máximo del contenedor al 100% */
-    margin: 0 auto; /* Centra el contenedor en la página */
-    height: auto; /* Ajusta la altura automáticamente */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+            background-color: #051522; /* Color de fondo del contenedor */
+            padding: 0; /* Sin espacio alrededor de las imágenes */
+            border: 1px solid #ccc; /* Borde opcional */
+            max-width: 100%; /* Ajusta el ancho máximo del contenedor al 100% */
+            margin: 0 auto; /* Centra el contenedor en la página */
+            height: auto; /* Ajusta la altura automáticamente */
+        }
 
-}
+        .image-part {
+            flex: 1 1 100%; /* Hace que cada parte ocupe el 100% del ancho por defecto */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Esconde cualquier contenido que desborde */
+        }
 
-.image-part {
-    background-size: contain; /* Ajusta el tamaño de fondo para contener la imagen */
-    background-repeat: no-repeat; /* No repetir la imagen */
-    height: 600px; /* Altura fija de las partes de la imagen */
-    display: flex;
-}
+        .image-part img {
+            width: 100%;
+            height: auto; /* Ajusta la altura automáticamente */
+            object-fit: contain; /* Ajusta la imagen para que contenga dentro del contenedor */
+        }
 
-.image-part img {
-    width: 100%;
-    height: auto; /* Ajusta la altura automáticamente */
-    object-fit: contain; /* Ajusta la imagen para que contenga dentro del contenedor */
-}
+        .part1 {
+            flex: 1;
+        }
 
-.part1 {
-    flex: 1;
-}
+        .part2 {
+            flex: 1;
+            height: 500px; /* Ajusta la altura de la segunda parte */
+        }
 
-.part2 {
-    flex: 1;
-    height: 500px; /* Ajusta la altura de la segunda parte */
-}
+        .part3 {
+            flex: 0.5;
+            height: 500px; /* Ajusta la altura de la tercera parte */
+        }
 
-.part3 {
-    flex: 0.5;
-    height: 500px; /* Ajusta la altura de la tercera parte */
-}    
-</style>
+        /* Estilos específicos para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .image-container {
+                flex-direction: column; /* Cambia la dirección a columna */
+            }
 
+            .image-part {
+                height: auto; /* Ajusta la altura automáticamente */
+            }
+
+            .part2, .part3 {
+                height: auto; /* Ajusta la altura de las partes */
+            }
+        }
+
+        /* Estilos específicos para pantallas más grandes */
+        @media (min-width: 601px) {
+            .image-container {
+                flex-direction: row; /* Mantiene la dirección en fila */
+            }
+
+            .part2, .part3 {
+                height: 500px; /* Mantiene la altura para pantallas más grandes */
+            }
+
+            .image-part {
+                height: 600px; /* Ajusta la altura para pantallas más grandes */
+            }
+        }
+    </style>
+ <!-- Casos de exito -->
+</section>
 <!-- Contact Start -->
 <div class="container-xxl py-5">
   
