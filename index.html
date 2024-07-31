@@ -616,15 +616,20 @@
     <!-- Testimonial End -->
 
 
-
     <div class="image-container">
-        <div class="image-part part1"></div>
-        <div class="image-part part2"></div>
-        <div class="image-part part3"></div>
+        <div class="image-part part1">
+            <img src="/img/PRESENTACIÓN (1)_page-0007 - copia.jpg" alt="Parte 1">
+        </div>
+        <div class="image-part part2">
+            <img src="/img/parte dos.jpg" alt="Parte 2">
+        </div>
+        <div class="image-part part3">
+            <img src="/img/parte-3.jpg" alt="Parte 3">
+        </div>
     </div>
 
+
     <style>
-    
     .image-container {
     display: flex;
     background-color: #051522; /* Color de fondo del contenedor */
@@ -643,29 +648,26 @@
     display: flex;
 }
 
+.image-part img {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+    object-fit: contain; /* Ajusta la imagen para que contenga dentro del contenedor */
+}
+
 .part1 {
     flex: 1;
-    background-image: url('/img/PRESENTACIÓN\ \(1\)_page-0007\ -\ copia.jpg'); /* URL de la primera parte de la imagen */
-    background-position: left center; /* Posiciona la imagen en la parte izquierda */
-    
 }
 
 .part2 {
-    
-    background-image: url('/img/parte\ dos.jpg'); /* URL de la segunda parte de la imagen */
-    background-position: center center; /* Posiciona la imagen en el centro */
-    height: 500px;
+    flex: 1;
+    height: 500px; /* Ajusta la altura de la segunda parte */
 }
 
 .part3 {
     flex: 0.5;
-    background-image: url('/img/parte-3.jpg'); /* URL de la tercera parte de la imagen */
-    background-position: right center; /* Posiciona la imagen en la parte derecha */
     height: 500px; /* Ajusta la altura de la tercera parte */
-}
-
-
-    </style>
+}    
+</style>
 
 <!-- Contact Start -->
 <div class="container-xxl py-5">
