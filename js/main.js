@@ -25,17 +25,7 @@
         }
     });
     
-    document.addEventListener('DOMContentLoaded', function() {
-        var path = window.location.pathname;
-        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    
-        navLinks.forEach(function(link) {
-            if (link.getAttribute('href') === path) {
-                link.classList.add('active');
-            }
-        });
-    });
-    
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
