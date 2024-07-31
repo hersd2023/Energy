@@ -633,30 +633,29 @@
 
 
     <style>
-        .image-container {
-            display: flex;
-            flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
-            background-color: #051522; /* Color de fondo del contenedor */
-            padding: 0; /* Sin espacio alrededor de las imágenes */
-            border: 1px solid #ccc; /* Borde opcional */
-            max-width: 100%; /* Ajusta el ancho máximo del contenedor al 100% */
-            margin: 0 auto; /* Centra el contenedor en la página */
-            height: auto; /* Ajusta la altura automáticamente */
-        }
+    .image-container {
+    display: flex;
+    background-color: #051522; /* Color de fondo del contenedor */
+    padding: 0; /* Sin espacio alrededor de las imágenes */
+    border: 1px solid #ccc; /* Borde opcional */
+    max-width: 100%; /* Ajusta el ancho máximo del contenedor al 100% */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    height: auto; /* Ajusta la altura automáticamente */
 
-        .image-part {
-            flex: 1 1 100%; /* Hace que cada parte ocupe el 100% del ancho por defecto */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden; /* Esconde cualquier contenido que desborde */
-        }
+}
 
-        .image-part img {
-            width: 100%;
-            height: auto; /* Ajusta la altura automáticamente */
-            object-fit: contain; /* Ajusta la imagen para que contenga dentro del contenedor */
-        }
+.image-part {
+    background-size: contain; /* Ajusta el tamaño de fondo para contener la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    height: 600px; /* Altura fija de las partes de la imagen */
+    display: flex;
+}
+
+.image-part img {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+    object-fit: contain; /* Ajusta la imagen para que contenga dentro del contenedor */
+}
 
         .part1 {
             flex: 1;
