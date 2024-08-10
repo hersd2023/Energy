@@ -192,26 +192,25 @@
 
 <!-- Quienes somos  -->
 <section class="informacion">
-    <div id="company" class="company-info-container justify-content-center align-items m-">
-        <div id="quienesomos" class="text-section left-text ">
+    <div id="company" class="company-info-container">
+        <div id="quienesomos" class="text-section left-text">
             <h1 class="title">¿QUIÉNES SOMOS?</h1>
             <p class="mb-4">Somos una empresa EPC <strong>(Ingeniería, Suministro y Construcción),</strong> con un manejo especializado en la gerencia de proyectos, basado en los estándares del Project Management Institute, realizamos la ejecución y puesta en marcha de los proyectos EPC, cumpliendo así con los tiempos y presupuestos establecidos desde la formulación del proyecto. Es por esto, que en Colombia contamos con una amplia experiencia en proyectos solares comerciales, industriales y residenciales. En Smart Energy Ing. <strong>Contamos con más de 3MW construidos en diferentes regiones del País, realizando así proyectos industriales como más de 2.4Mw instalados, comerciales con más de 1Mw y residenciales con más de 180kw.</strong>  Nuestra empresa otorga certificaciones en calidad para la buena puesta en marcha de los proyectos.</p>
         </div>
         <div class="image-section right-image">
-            <img src="img/Quienes somos.png" alt="">
+            <img src="img/Quienes somos.png" alt="Imagen de ¿Quiénes Somos?">
         </div>
     </div>
-</section>
 
 <style>
+    /* Estilos generales */
     .company-info-container {
         display: flex;
-        flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
-        justify-content: space-between; /* Alinea el contenido a los extremos */
         align-items: center; /* Alinea verticalmente */
         padding: 20px; /* Añade un poco de espacio alrededor del contenido */
         max-width: 100%; /* Asegura que el contenedor no cause scroll horizontal */
         box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+        overflow-x: hidden; /* Oculta el desbordamiento horizontal */
     }
     
     .left-text, .right-image {
@@ -226,20 +225,35 @@
     
     .right-image img {
         width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
-        max-width: 500px; /* Establece un ancho máximo para la imagen */
+        max-width: 400px; /* Establece un ancho máximo para la imagen */
         height: auto; /* Mantiene la proporción de la imagen */
     }
     
     .title {
         margin-bottom: 20px; /* Ajusta este valor según la separación deseada */
     }
-    
 
+    /* Media Query para pantallas pequeñas */
+    @media (max-width: 768px) {
+        .company-info-container {
+            flex-direction: column; /* Cambia la dirección del flex a columna */
+        }
+
+        .left-text, .right-image {
+            flex: none; /* Elimina el crecimiento flexible */
+            width: 85%; /* Asegura que cada sección ocupe el 100% del ancho */
+        }
+        .left-text {
+            margin-bottom: 20px; /* Añade espacio entre el texto y la imagen */
+        }
+    }
 </style>
-
+</section>
 
 
     <!--Mapa Col-->
+    <!-- Casos de exito -->
+
     <section>
         <div class="image-container">
             <div class="image-part part1">
@@ -349,7 +363,7 @@
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <p class="fw-medium text-uppercase text-primary mb-2">Sobre Nosotros</p>
                 <h1 class="display-5 mb-4">Construcción, operación y mantenimiento de SFV</h1>
-                <p class="mb-4">Especialistas en la construcción y operación del sistema solar fotovoltaico, ofrecemos los servicios de diseño, construcción y supervisión de proyectos eléctricos industriales y comerciales. Contamos con un equipo multidisciplinario de profesionales con amplia experiencia para ofrecer soluciones confiables, económicas y eficientes. </p>
+                <p class="mb-4">especialistas en la construcción y operación del sistema solar fotovoltaico, ofrecemos los servicios de diseño, construcción y supervisión de proyectos eléctricos industriales y comerciales. Contamos con un equipo multidisciplinario de profesionales con amplia experiencia para ofrecer soluciones confiables, económicas y eficientes. </p>
                 <div class="d-flex align-items-center mb-4">
                     <div class="flex-shrink-0 bg-primary p-4">
                         <h1 class="display-2 " data-toggle="counter-up">8</h1>

@@ -88,7 +88,7 @@
             </div>
             <a href="contact.html" class="nav-item nav-link">Contactanos</a>
         </div>
-        <a href="" class="btn btn-primary px-3 d-none d-lg-block">Cotizar Ahora</a>
+        <a href="https://wa.me/+573106977028" class="btn btn-primary px-3 d-none d-lg-block">Cotizar Ahora</a>
     </div>
 </nav>
 <!-- Navbar End -->
@@ -154,7 +154,7 @@
                                 <p class="text-white mb-0">Implementamos soluciones solares robustas para satisfacer las demandas energéticas de empresas.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="">Leer más</a>
+                        <a href="https://wa.me/+573106977028" class="btn btn-primary px-3 d-none d-lg-block">Cotizar Ahora</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -173,7 +173,7 @@
                                 <p class="text-white mb-0">Aseguramos la eficiencia continua de tu sistema solar con servicios de mantenimiento especializados.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="">Leer más</a>
+                        <a href="https://wa.me/+573106977028" class="btn btn-primary px-3 d-none d-lg-block">Cotizar Ahora</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -192,7 +192,7 @@
                                 <p class="text-white mb-0">Optimizamos el rendimiento de tus proyectos solares mediante monitoreo y gestión proactiva.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="">Leer más</a>
+                        <a href="https://wa.me/+573106977028" class="btn btn-primary px-3 d-none d-lg-block">Cotizar Ahora</a>
                     </div>
                 </div>
             </div>
@@ -201,7 +201,6 @@
 </section>
 
 <!-- Service End -->
-
 <section>
     <div class="imagenn-container">
         <div class="imagen-part partn1">
@@ -259,44 +258,33 @@
             transform: scale(0.9); /* Escala la imagen para hacerla más pequeña */
         }
 
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Estilos específicos para pantallas pequeñas */
-        @media (max-width: 600px) {
+        /* Media query para pantallas más pequeñas */
+        @media (max-width: 768px) {
             .imagenn-container {
-                flex-direction: column; /* Cambia la dirección a columna */
+                flex-direction: column; /* Coloca las imágenes una debajo de la otra */
+                align-items: flex-start; /* Alinea las imágenes a la izquierda */
             }
 
             .imagen-part {
-                height: auto; /* Ajusta la altura automáticamente */
+                width: 100%; /* Asegura que cada imagen ocupe el 100% del ancho */
+                margin-top: 0;
+                margin-bottom: 20px; /* Espaciado entre las imágenes */
+                opacity: 1; /* Asegura que las imágenes sean visibles */
+                transform: translateY(0); /* Resetea la transformación */
+                animation: none; /* Elimina la animación para pantallas pequeñas */
             }
 
             .partn3 {
-                margin-top: 10px; /* Reduce el margen para pantallas pequeñas */
-            }
-        }
-
-        /* Estilos específicos para pantallas más grandes */
-        @media (min-width: 601px) {
-            .imagenn-container {
-                flex-direction: row; /* Mantiene la dirección en fila */
+                margin-top: 0;
             }
 
-            .imagen-part {
-                height: auto; /* Ajusta la altura automáticamente */
+            .partn3 img {
+                transform: scale(1); /* Resetea la escala en pantallas pequeñas */
             }
         }
     </style>
 </section>
+
 
   
     <!-- Features Start -->
