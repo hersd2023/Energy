@@ -3,13 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Industro - Industrial HTML Template</title>
+    <title>Nosotros - Smart Energy</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+     <!-- Incluir jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Incluir Counter-Up -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+     <!-- Incluir Waypoints -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="/img/LOGOS - VARIACIONES.ai.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,29 +71,87 @@
     <!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-        <a href="index.html" class="navbar-brand ps-5 me-0">
-            <img src="/img/LOGOS - VARIACIONES.ai.png" alt="Logo de Smart Energy" class="logo">
-            <h1 class="navbar-brand h1">Smart <span style="font-family: Georgia, serif; font-size: 28px;">Energy</span></h1>
-        </a>
-        
-        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link ">Inicio</a>
-                <a href="about.html" class="nav-item nav-link active">Nosotros </a>
-                <a href="service.html" class="nav-item nav-link">Servicios</a>
-                <a href="project.html" class="nav-item nav-link">Proyectos</a>
-                <div class="nav-item dropdown">
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contactanos</a>
-            </div>
-            <a href="" class="btn btn-primary px-3 d-none d-lg-block">cotización gratuita</a>
+   <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
+    <a href="index.html" class="navbar-brand ps-5 me-0">
+        <img src="/img/LOGOS - VARIACIONES.ai.png" alt="Logo de Smart Energy" class="logo">
+        <h1 class="navbar-brand h1">Smart <span style="font-family: Georgia, serif; font-size: 28px;">Energy</span></h1>
+    </a>
+    
+    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link ">Inicio</a>
+            <a href="about.html" class="nav-item nav-link active">Nosotros</a>
+            <a href="service.html" class="nav-item nav-link">Servicios</a>
+            <a href="project.html" class="nav-item nav-link">Proyectos</a>
+            <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
         </div>
-    </nav>
+        <a href="" class="btn btn-primary px-3 d-none d-lg-block">Cotización gratuita</a>
+    </div>
+</nav>
+
+    <style>
+
+.nav-item.nav-link.active {
+    color: #007bff; /* Color de texto azul para el enlace activo */
+    font-weight: bold; /* Opcional: pone el texto en negrita */
+}
+
+/* Otras reglas de estilo */
+.navbar {
+    padding: 0 1rem;
+}
+
+.navbar-brand .logo {
+    max-width: 100px; /* Tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción */
+}
+
+.navbar-brand h1 {
+    font-size: 2rem; /* Tamaño del texto del logo */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem; /* Tamaño del texto del menú */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-brand .logo {
+        max-width: 70px; /* Reduce el tamaño del logo */
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.5rem; /* Reduce el tamaño del texto del logo */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.9rem; /* Reduce el tamaño del texto del menú */
+    }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .navbar-brand .logo {
+        max-width: 50px; /* Reduce aún más el tamaño del logo */
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.2rem; /* Reduce aún más el tamaño del texto del logo */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.8rem; /* Reduce aún más el tamaño del texto del menú */
+    }
+
+    .btn.btn-primary {
+        font-size: 0.8rem; /* Reduce el tamaño del botón en pantallas pequeñas */
+    }
+}
+</style>
     <!-- Navbar End -->
 
 
@@ -126,47 +190,57 @@
     </style>
     <!-- Page Header End -->
 
-    <!-- Quienes somos  -->
 
-    <section class="informacion">
-        <div id="company" class="company-info-container justify-content-center align-items m-">
-            <div id="quienesomos" class="text-section left-text ">
-                <h1 class="title">¿QUIÉNES SOMOS?</h1>
-                <p class="mb-4">Somos una empresa EPC <strong>(Ingeniería, Suministro y Construcción),</strong> con un manejo especializado en la gerencia de proyectos, basado en los estándares del Project Management Institute, realizamos la ejecución y puesta en marcha de los proyectos EPC, cumpliendo así con los tiempos y presupuestos establecidos desde la formulación del proyecto. Es por esto, que en Colombia contamos con una amplia experiencia en proyectos solares comerciales, industriales y residenciales. En Smart Energy Ing. <strong>Contamos con más de 3MW construidos en diferentes regiones del País, realizando así proyectos industriales como más de 2.4Mw instalados, comerciales con más de 1Mw y residenciales con más de 180kw.</strong>  Nuestra empresa otorga certificaciones en calidad para la buena puesta en marcha de los proyectos. 
-                </p>
-            </div>
-            <div class="image-section right-image">
-                <img src="img/Quienes somos.png" alt="">
-            </div>
+<!-- Quienes somos  -->
+<section class="informacion">
+    <div id="company" class="company-info-container justify-content-center align-items m-">
+        <div id="quienesomos" class="text-section left-text ">
+            <h1 class="title">¿QUIÉNES SOMOS?</h1>
+            <p class="mb-4">Somos una empresa EPC <strong>(Ingeniería, Suministro y Construcción),</strong> con un manejo especializado en la gerencia de proyectos, basado en los estándares del Project Management Institute, realizamos la ejecución y puesta en marcha de los proyectos EPC, cumpliendo así con los tiempos y presupuestos establecidos desde la formulación del proyecto. Es por esto, que en Colombia contamos con una amplia experiencia en proyectos solares comerciales, industriales y residenciales. En Smart Energy Ing. <strong>Contamos con más de 3MW construidos en diferentes regiones del País, realizando así proyectos industriales como más de 2.4Mw instalados, comerciales con más de 1Mw y residenciales con más de 180kw.</strong>  Nuestra empresa otorga certificaciones en calidad para la buena puesta en marcha de los proyectos.</p>
         </div>
-    </section>
-    <style>
+        <div class="image-section right-image">
+            <img src="img/Quienes somos.png" alt="">
+        </div>
+    </div>
+</section>
+
+<style>
     .company-info-container {
         display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
         justify-content: space-between; /* Alinea el contenido a los extremos */
         align-items: center; /* Alinea verticalmente */
+        padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+        max-width: 100%; /* Asegura que el contenedor no cause scroll horizontal */
+        box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
     }
     
-    .left-text {
-        flex: 1; /* Permite que el texto ocupe el espacio disponible */
+    .left-text, .right-image {
+        flex: 1; /* Permite que el texto e imagen ocupen el espacio disponible */
         text-align: left; /* Alinea el texto a la izquierda */
+        margin: 10px; /* Añade margen entre los elementos */
     }
     
     .right-image {
-        flex: 1; /* Permite que la imagen ocupe el espacio disponible */
-        text-align: right; /* Alinea la imagen a la derecha */
+        text-align: center; /* Centra la imagen */
     }
     
     .right-image img {
-        width: 70%; /* Ajusta el tamaño de la imagen al 70% del contenedor */
+        width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+        max-width: 500px; /* Establece un ancho máximo para la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
     }
-    
     
     .title {
-        margin-bottom: 60px; /* Ajusta este valor según la separación deseada */
+        margin-bottom: 20px; /* Ajusta este valor según la separación deseada */
     }
+    
+
 </style>
-    </section>
+
+
+
+    <!--Mapa Col-->
     <section>
         <div class="image-container">
             <div class="image-part part1">
