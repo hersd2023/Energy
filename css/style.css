@@ -491,7 +491,7 @@ h6,
 .service-item img {
     width: 100%;
     height: auto;
-    max-height: 300px; /* Ajusta el tamaño máximo de las imágenes según sea necesario */
+    max-height: 350px; /* Ajusta el tamaño máximo de las imágenes según sea necesario */
     object-fit: cover; /* Hace que la imagen cubra el contenedor */
 }
 .service-item .service-detail {
