@@ -199,6 +199,68 @@
 </div>
 <!-- Service End -->
 
+<section>
+    <div class="imagenn-container">
+        <div class="imagen-part partn1">
+            <img src="/img/PRESENTACIÓN (1)_page-0005.jpg" alt="Parte 1">
+        </div>
+        <div class="imagen-part partn2">
+            <img src="/img/PRESENTACIÓN (1)_page-0005 - copia.jpg" alt="Parte 2">
+        </div>
+        <div class="imagen-part partn3">
+            <img src="/img/PRESENTACIÓN (1)_page-0006.jpg" alt="Parte 3">
+        </div>
+    </div>
+
+    <style>
+        .imagenn-container {
+            display: flex;
+            background-color: #051522; /* Color de fondo del contenedor */
+            padding: 0; /* Sin espacio alrededor de las imágenes */
+            border: 1px solid #ccc; /* Borde opcional */
+            max-width: 100%; /* Ajusta el ancho máximo del contenedor al 100% */
+            margin: 0 auto; /* Centra el contenedor en la página */
+            height: auto; /* Ajusta la altura automáticamente */
+        }
+
+        .imagen-part {
+            flex: 1; /* Cada parte ocupa el mismo espacio */
+            display: flex;
+        }
+
+        .imagen-part img {
+            width: 100%;
+            height: auto; /* Ajusta la altura automáticamente */
+            object-fit: contain; /* Ajusta la imagen para que contenga dentro del contenedor */
+        }
+
+        .partn3 {
+            margin-top: 90px; /* Ajusta este valor según sea necesario */
+        }
+
+        /* Estilos específicos para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .imagenn-container {
+                flex-direction: column; /* Cambia la dirección a columna */
+            }
+
+            .imagen-part {
+                height: auto; /* Ajusta la altura automáticamente */
+            }
+        }
+
+        /* Estilos específicos para pantallas más grandes */
+        @media (min-width: 601px) {
+            .imagenn-container {
+                flex-direction: row; /* Mantiene la dirección en fila */
+            }
+
+            .imagen-part {
+                height: auto; /* Ajusta la altura automáticamente */
+            }
+        }
+    </style>
+</section>
   <!-- Features Start -->
   <div class="container-xxl py-5">
     <div class="container">
