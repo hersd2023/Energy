@@ -89,7 +89,7 @@
             <a href="project.html" class="nav-item nav-link">Proyectos</a>
             <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
         </div>
-        <a href="" class="btn btn-primary px-3 d-none d-lg-block">Cotización gratuita</a>
+        <a href="" class="btn btn-primary px-3 d-none d-lg-block">Cotizar Ahora</a>
     </div>
 </nav>
 
@@ -396,40 +396,57 @@
 <!-- About End -->
 
 
-    <!-- Facts Start -->
-    <div class="container-fluid facts my-5 p-5">
-        <div class="row g-5">
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-certificate fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">25</h1>
-                    <span class="fs-5 fw-semi-bold text-white">Years Experience</span>
-                </div>
+   <!-- Facts Start -->
+   <div class="container-fluid facts my-5 p-5">
+    <div class="row g-5">
+        <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+            <div class="text-center border p-5">
+                <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">8</h1>
+                <span class="fs-5 fw-semi-bold text-white">Años de experiencia</span>
             </div>
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">135</h1>
-                    <span class="fs-5 fw-semi-bold text-white">Team Members</span>
-                </div>
+        </div>
+        <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
+            <div class="text-center border p-5">
+                <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+                <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">22</h1>
+                <span class="fs-5 fw-semi-bold text-white">Equipo</span>
             </div>
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-users fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">957</h1>
-                    <span class="fs-5 fw-semi-bold text-white">Happy Clients</span>
-                </div>
+        </div>
+        <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
+            <div class="text-center border p-5">
+                <img src="/img/ii+.webp" class="iconoCC">
+                <h1 class="display-2 text-primary mb-0" data-toggle="counter-up cienmm">100%</h1>
+                <span class="fs-5 fw-semi-bold text-white">Cobertura Nacional</span>
             </div>
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-check-double fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">1839</h1>
-                    <span class="fs-5 fw-semi-bold text-white">Projects Done</span>
-                </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('[cienmm="counter-up"]').counterUp({
+                    delay: 10,
+                    time: 1000,
+                    formatter: function (n) {
+                        return n + '%';
+                    }
+                });
+            });
+        </script>
+        <style>.iconoCC {
+            width: 60px;  /* Ajusta el tamaño según tus necesidades */
+            height: 60px; /* Ajusta el tamaño según tus necesidades */
+            filter: brightness(0) invert(1); /* Cambia el color del icono a blanco */
+        }</style>
+        <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
+            <div class="text-center border p-5">
+                <i class="fa fa-check-double fa-3x text-white mb-3"></i>
+                <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">3647</h1>
+                <span class="fs-5 fw-semi-bold text-white">Kw instalados</span>
             </div>
         </div>
     </div>
-    <!-- Facts End -->
+</div>
+<!-- Facts End -->
+
 
 
 
