@@ -130,6 +130,7 @@
 <!-- Page Header End -->
 
 <!-- Service Start -->
+<section>
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
@@ -139,9 +140,9 @@
         <div class="row gy-5 gx-4">
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
-                    <img class="img-fluid" src="img/service-1.jpg" alt="">
+                    <img class="img-fluid" src="/img/1.jpg" alt="">
                     <div class="service-img">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        <img class="img-fluid" src="/img/1.jpg" alt="">
                     </div>
                     <div class="service-detail">
                         <div class="service-title">
@@ -158,9 +159,9 @@
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="service-item">
-                    <img class="img-fluid" src="img/service-2.jpg" alt="">
+                    <img class="img-fluid" src="/img/2.jpg" alt="">
                     <div class="service-img">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        <img class="img-fluid" src="/img/2.jpg" alt="">
                     </div>
                     <div class="service-detail">
                         <div class="service-title">
@@ -177,9 +178,9 @@
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="service-item">
-                    <img class="img-fluid" src="img/service-3.jpg" alt="">
+                    <img class="img-fluid" src="/img/3.jpg" alt="">
                     <div class="service-img">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        <img class="img-fluid" src="/img/3.jpg" alt="">
                     </div>
                     <div class="service-detail">
                         <div class="service-title">
@@ -197,6 +198,8 @@
         </div>
     </div>
 </div>
+
+</section>
 <!-- Service End -->
 
 <section>
@@ -228,6 +231,17 @@
             display: flex;
             align-items: center; /* Centra verticalmente las imágenes */
             justify-content: center; /* Centra horizontalmente las imágenes */
+            opacity: 0; /* Inicia con las imágenes ocultas */
+            transform: translateY(20px); /* Inicia con las imágenes desplazadas hacia abajo */
+            animation: fadeInUp 1s forwards; /* Aplica la animación */
+        }
+
+        .imagen-part:nth-child(2) {
+            animation-delay: 0.2s; /* Retraso para la segunda imagen */
+        }
+
+        .imagen-part:nth-child(3) {
+            animation-delay: 0.4s; /* Retraso para la tercera imagen */
         }
 
         .imagen-part img {
@@ -243,6 +257,17 @@
 
         .partn3 img {
             transform: scale(0.9); /* Escala la imagen para hacerla más pequeña */
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Estilos específicos para pantallas pequeñas */
@@ -272,6 +297,7 @@
         }
     </style>
 </section>
+
   <!-- Features Start -->
   <div class="container-xxl py-5">
     <div class="container">

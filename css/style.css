@@ -472,7 +472,10 @@ h6,
     margin: 65px 0 25px 0;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
 }
-
+.service-img {
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    margin-bottom: 20px;
+}
 .service-item .service-img {
     position: absolute;
     padding: 12px;
@@ -485,7 +488,12 @@ h6,
     box-shadow: 0 0 45px rgba(0, 0, 0, .09);
     z-index: 2;
 }
-
+.service-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Ajusta el tamaño máximo de las imágenes según sea necesario */
+    object-fit: cover; /* Hace que la imagen cubra el contenedor */
+}
 .service-item .service-detail {
     position: absolute;
     width: 100%;
