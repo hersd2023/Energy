@@ -226,6 +226,8 @@
         .imagen-part {
             flex: 1; /* Cada parte ocupa el mismo espacio */
             display: flex;
+            align-items: center; /* Centra verticalmente las imágenes */
+            justify-content: center; /* Centra horizontalmente las imágenes */
         }
 
         .imagen-part img {
@@ -235,7 +237,12 @@
         }
 
         .partn3 {
-            margin-top: 90px; /* Ajusta este valor según sea necesario */
+            margin-top: 150px; /* Ajusta este valor según sea necesario */
+            flex: 1; /* Hace que la tercera parte sea un poco más pequeña */
+        }
+
+        .partn3 img {
+            transform: scale(0.9); /* Escala la imagen para hacerla más pequeña */
         }
 
         /* Estilos específicos para pantallas pequeñas */
@@ -246,6 +253,10 @@
 
             .imagen-part {
                 height: auto; /* Ajusta la altura automáticamente */
+            }
+
+            .partn3 {
+                margin-top: 10px; /* Reduce el margen para pantallas pequeñas */
             }
         }
 
