@@ -180,7 +180,7 @@
     .btn-31 :before,
     .btn-31:after,
     .btn-31:before {
-      border: 0 solid;
+      border: none;
       box-sizing: border-box;
     }
     
@@ -198,7 +198,6 @@
   font-weight: 900;
   line-height: 1.5;
   margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#ffffff, #fcf5f5);
   padding: 1rem 2rem;
   position: relative;
   text-transform: uppercase;
@@ -253,9 +252,11 @@
   transition: clip-path 0.2s ease;
   transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
   border-radius: 10px;
+  border: none;
 }
     
     .btn-31:hover:before {
+
       --progress: 0%;
     }
     
@@ -271,6 +272,7 @@
         
       display: block;
       font-weight: 900;
+    
       position: relative;
 
     }
