@@ -823,7 +823,7 @@ height: 100%;
 }
 
 .navbar-brand .logo {
-    max-height: 40px; /* Ajusta el tamaño máximo del logo según tu preferencia */
+    max-height: 200px; /* Ajusta el tamaño máximo del logo según tu preferencia */
     margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 /*** Video ***/
