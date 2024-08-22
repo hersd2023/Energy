@@ -367,30 +367,49 @@
                         <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Ingeniería del detalle.</p>
                     </div>
                 </div>
-                <div class="row pt-2">
-                    <div class="col-sm-6">
-                        <div class="d-flex align-items-center"  style="font-size: 0.7rem; padding: 7px;">
+                <div class="row pt-2 contact-info">
+                    <div class="col-sm-6 email-info">
+                        <div class="d-flex align-items-center" style="font-size: 0.7rem; padding: 7px;">
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary" style="width: 30px; height: 30px;">
                                 <i class="fa fa-envelope-open text-white" style="font-size: 18px;"></i> 
                             </div>
                             <div class="ms-3">
-                                <p class="mb-2"style="line-height: 0.7;">Email</p>
-                                <h5 class="mb-0"style="line-height: 0.7;">info@smartenergying.com</h5>
+                                <p class="mb-2" style="line-height: 0.7;">Email</p>
+                                <h5 class="mb-0" style="line-height: 0.7;">info@smartenergying.com</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="d-flex align-items-center"  style="font-size: 0.7rem; padding: 7px;">
+                    <div class="col-sm-6 phone-info">
+                        <div class="d-flex align-items-center" style="font-size: 0.7rem; padding: 7px;">
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary" style="width: 30px; height: 30px;">
-                                <i class="fa fa-phone-alt text-white"  style="font-size: 18px;"></i>
+                                <i class="fa fa-phone-alt text-white" style="font-size: 18px;"></i>
                             </div>
                             <div class="ms-3">
-                                <p class="mb-2"style="line-height: 0.7;">Telefono </p>
-                                <h5 class="mb-0"style="line-height: 0.7;">+57 310 6977028</h5>
+                                <p class="mb-2" style="line-height: 0.7;">Telefono </p>
+                                <h5 class="mb-0" style="line-height: 0.7;">+57 310 6977028</h5>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <style>
+                /* Estilo por defecto: email y teléfono en la misma fila */
+                .contact-info {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                
+                .email-info, .phone-info {
+                    width: 50%;
+                }
+                
+                /* Media query para pantallas de menos de 779px */
+                @media (max-width: 779px) {
+                    .email-info, .phone-info {
+                        width: 100%;
+                    }
+                }
+                </style>
             </div>
         </div>
     </div>
