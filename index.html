@@ -783,13 +783,20 @@
     </div>
     Team End -->
 
+<!-- Sección visible en pantallas de 600px o más -->
+<section class="section-large">
+    <div class="image-container">
+        <div class="image-part partn1">
+            <img src="/img/CASOS_CON_EXITO_Mesa_de_trabajo_1[1].jpg" alt="Partn1">
+        </div>
+        <div class="image-part partn2">
+            <img src="/img/CasososE2 (1).jpg" alt="Partn2">
+        </div>
+    </div>
+</section>
 
- 
-
-
-    <!-- Casos de exito -->
-
-<section>
+<!-- Sección visible en pantallas de menos de 600px -->
+<section class="section-small">
     <div class="image-container">
         <div class="image-part part1">
             <img src="/img/PRESENTACIÓN (1)_page-0007 - copia.jpg" alt="Parte 1">
@@ -801,79 +808,62 @@
             <img src="/img/parte-3.jpg" alt="Parte 3">
         </div>
     </div>
+</section>
 
-
-    <style>
-    .image-container {
+<style>
+/* Estilos comunes para ambas secciones */
+.image-container {
     display: flex;
     background-color: #051522; /* Color de fondo del contenedor */
-    padding: 0; /* Sin espacio alrededor de las imágenes */
+    padding: 10px; /* Añade espacio alrededor de las imágenes */
     border: 1px solid #ccc; /* Borde opcional */
     max-width: 100%; /* Ajusta el ancho máximo del contenedor al 100% */
     margin: 0 auto; /* Centra el contenedor en la página */
-    height: auto; /* Ajusta la altura automáticamente */
-
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
 }
 
 .image-part {
-    background-size: contain; /* Ajusta el tamaño de fondo para contener la imagen */
-    background-repeat: no-repeat; /* No repetir la imagen */
-    height: 600px; /* Altura fija de las partes de la imagen */
+    flex: 1;
+    margin: 5px; /* Margen entre las partes de la imagen */
+    box-sizing: border-box; /* Incluye el margen en el tamaño total */
     display: flex;
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
 }
 
 .image-part img {
     width: 100%;
-    height: auto; /* Ajusta la altura automáticamente */
+    height: auto;
     object-fit: contain; /* Ajusta la imagen para que contenga dentro del contenedor */
 }
 
-        .part1 {
-            flex: 1;
-        }
+/* Estilos para la sección visible en pantallas de 600px o más */
+.section-large {
+    display: none;
+}
 
-        .part2 {
-            flex: 1;
-            height: 500px; /* Ajusta la altura de la segunda parte */
-        }
+/* Estilos para la sección visible en pantallas de menos de 600px */
+.section-small {
+    display: block;
+}
 
-        .part3 {
-            flex: 0.5;
-            height: 500px; /* Ajusta la altura de la tercera parte */
-        }
+/* Media queries para cambiar la visibilidad y disposición según el ancho de la pantalla */
+@media (min-width: 600px) {
+    .section-large {
+        display: block;
+    }
+    .section-small {
+        display: none;
+    }
+}
 
-        /* Estilos específicos para pantallas pequeñas */
-        @media (max-width: 600px) {
-            .image-container {
-                flex-direction: column; /* Cambia la dirección a columna */
-            }
+@media (max-width: 599px) {
+    .image-container {
+        flex-direction: column; /* Cambia la dirección a columna para pantallas pequeñas */
+    }
+}
+</style>
 
-            .image-part {
-                height: auto; /* Ajusta la altura automáticamente */
-            }
-
-            .part2, .part3 {
-                height: auto; /* Ajusta la altura de las partes */
-            }
-        }
-
-        /* Estilos específicos para pantallas más grandes */
-        @media (min-width: 601px) {
-            .image-container {
-                flex-direction: row; /* Mantiene la dirección en fila */
-            }
-
-            .part2, .part3 {
-                height: 500px; /* Mantiene la altura para pantallas más grandes */
-            }
-
-            .image-part {
-                height: 600px; /* Ajusta la altura para pantallas más grandes */
-            }
-        }
-    </style>
- <!-- Casos de exito -->
-</section>
 <!-- Contact Start -->
 <div class="container-xxl py-5">
   
