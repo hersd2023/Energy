@@ -102,6 +102,7 @@ h6,
 .btn-primary,
 .btn-outline-primary:hover {
     color: #FFFFFF;
+    border-radius: 8px;
 }
 
 .btn-square {
@@ -358,6 +359,7 @@ h6,
 
 .facts .border {
     border-color: rgba(255, 255, 255, .1) !important;
+    border-radius: 8px;
 }
 
 
@@ -471,6 +473,7 @@ h6,
     position: relative;
     margin: 65px 0 25px 0;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    border-radius: 8px;
 }
 .service-img {
     flex-shrink: 0; /* Evita que la imagen se reduzca */
@@ -487,12 +490,14 @@ h6,
     background: #FFFFFF;
     box-shadow: 0 0 45px rgba(0, 0, 0, .09);
     z-index: 2;
+    border-radius: 8px;
 }
 .service-item img {
     width: 100%;
     height: auto;
     max-height: 350px; /* Ajusta el tamaño máximo de las imágenes según sea necesario */
     object-fit: cover; /* Hace que la imagen cubra el contenedor */
+    border-radius: 8px;
 }
 .service-item .service-detail {
     position: absolute;
@@ -518,6 +523,7 @@ h6,
     text-align: center;
     background: #FFFFFF;
     transition: .5s;
+    border-radius: 8px;
 }
 
 .service-item:hover .service-title {
