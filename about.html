@@ -252,7 +252,6 @@
 </style>
 </section>
 
-<!-- Sección visible en pantallas de 600px o más -->
 <section class="section-large">
     <div class="image-container">
         <div class="image-part partn1">
@@ -264,17 +263,13 @@
     </div>
 </section>
 
-<!-- Sección visible en pantallas de menos de 600px -->
 <section class="section-small">
     <div class="image-container">
-        <div class="image-part part1">
-            <img src="/img/PRESENTACIÓN (1)_page-0007 - copia.jpg" alt="Parte 1">
+        <div class="image-part partn1">
+            <img src="/img/CASSOOOS.jpg" alt="Partn1">
         </div>
-        <div class="image-part part2">
-            <img src="/img/parte dos.jpg" alt="Parte 2">
-        </div>
-        <div class="image-part part3">
-            <img src="/img/parte-3.jpg" alt="Parte 3">
+        <div class="image-part partn2">
+            <img src="/img/SOBRENOSOTROS11.jpg" alt="Partn2">
         </div>
     </div>
 </section>
@@ -283,52 +278,58 @@
 /* Estilos comunes para ambas secciones */
 .image-container {
     display: flex;
-    background-color: #051522; /* Color de fondo del contenedor */
-    padding: 10px; /* Añade espacio alrededor de las imágenes */
-    border: 1px solid #ccc; /* Borde opcional */
-    max-width: 100%; /* Ajusta el ancho máximo del contenedor al 100% */
-    margin: 0 auto; /* Centra el contenedor en la página */
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    background-color: #051522;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .image-part {
     flex: 1;
-    margin: 5px; /* Margen entre las partes de la imagen */
-    box-sizing: border-box; /* Incluye el margen en el tamaño total */
+    margin: 8px;
+    box-sizing: border-box;
     display: flex;
-    align-items: center; /* Centra la imagen verticalmente */
-    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center;
+    justify-content: center;
 }
 
 .image-part img {
     width: 100%;
     height: auto;
-    object-fit: contain; /* Ajusta la imagen para que contenga dentro del contenedor */
+    object-fit: contain;
 }
 
 /* Estilos para la sección visible en pantallas de 600px o más */
 .section-large {
-    display: none;
-}
-
-/* Estilos para la sección visible en pantallas de menos de 600px */
-.section-small {
     display: block;
 }
 
-/* Media queries para cambiar la visibilidad y disposición según el ancho de la pantalla */
-@media (min-width: 600px) {
-    .section-large {
-        display: block;
-    }
-    .section-small {
-        display: none;
-    }
+.section-small {
+    display: none;
 }
 
+/* Media queries para cambiar la visibilidad y disposición según el ancho de la pantalla */
 @media (max-width: 599px) {
+    .section-large {
+        display: none;
+    }
+    .section-small {
+        display: block;
+    }
+
     .image-container {
-        flex-direction: column; /* Cambia la dirección a columna para pantallas pequeñas */
+        flex-direction: column;
+        align-items: center; /* Centra las imágenes horizontalmente */
+    }
+
+    .image-part {
+        margin: 10px 0; /* Reduce el margen vertical entre las imágenes */
+    }
+
+    .image-part img {
+        width: 100%; /* Mantén las imágenes al 100% del contenedor */
     }
 }
 </style>
