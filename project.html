@@ -281,7 +281,14 @@
     <!-- Otra parte del contenido de la página -->
      
     <div class="container-xxl py-5">
-  
+        <style>
+            @media (max-width: 576px) {
+                .row.g-4 .col-6 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+        </style>
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <p class="fw-medium text-uppercase text-primary mb-2">CONTÁCTENOS</p>
@@ -294,8 +301,8 @@
                                 <i class="fa fa-phone-alt text-white"></i>
                             </div>
                             <div class="ms-3">
-                                <h6>Llamanos</h6>
-                                <span>+57 310 6977028</span>
+                                <h6 style="line-height: 0.7;">Llamanos</h6>
+                                <span style="line-height: 0.7;">+57 310 6977028</span>
                             </div>
                         </div>
                     </div>
@@ -305,13 +312,14 @@
                                 <i class="fa fa-envelope text-white"></i>
                             </div>
                             <div class="ms-3">
-                                <h6>Correo Electronico</h6>
-                                <span>info@smartenergying.com</span>
+                                <h6 style="line-height: 0.7;">Correo Electronico  </h6>
+                                <span style="line-height: 0.7;">info@smartenergying.com</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Resto del código -->
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="container mt-5">
                     <form id="contactForm">
