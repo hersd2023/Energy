@@ -225,6 +225,7 @@
     }
     
     .right-image img {
+        align-items: center;
         border-radius: 7px;
         width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
         max-width: 500px; /* Establece un ancho máximo para la imagen */
@@ -236,7 +237,7 @@
     }
 
     /* Media Query para pantallas pequeñas */
-    @media (max-width: 768px) {
+    @media (max-width: 599px) {
         .company-info-container {
             flex-direction: column; /* Cambia la dirección del flex a columna */
         }
@@ -274,211 +275,197 @@
     </div>
 </section>
 
-<style>
-/* Estilos comunes para ambas secciones */
-.image-container {
-    display: flex;
-    background-color: #051522;
-    padding: 10px;
-    border: 1px solid #ccc;
-    max-width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
+    <style>
+        /* Estilos comunes para ambas secciones */
+        .image-container {
+            display: flex;
+            background-color: #051522;
+            padding: 10px;
+            border: 1px solid #ccc;
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
 
-.image-part {
-    flex: 1;
-    margin: 8px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .image-part {
+            flex: 1;
+            margin: 8px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.image-part img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
+        .image-part img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
 
-/* Estilos para la sección visible en pantallas de 600px o más */
-.section-large {
-    display: block;
-}
+        /* Estilos para la sección visible en pantallas de 600px o más */
+        .section-large {
+            display: block;
+        }
 
-.section-small {
-    display: none;
-}
+        .section-small {
+            display: none;
+        }
 
-/* Media queries para cambiar la visibilidad y disposición según el ancho de la pantalla */
-@media (max-width: 599px) {
-    .section-large {
-        display: none;
-    }
-    .section-small {
-        display: block;
-    }
+        /* Media queries para cambiar la visibilidad y disposición según el ancho de la pantalla */
+        @media (max-width: 599px) {
+            .section-large {
+                display: none;
+            }
+            .section-small {
+                display: block;
+            }
 
-    .image-container {
-        flex-direction: column;
-        align-items: center; /* Centra las imágenes horizontalmente */
-    }
+            .image-container {
+                flex-direction: column;
+                align-items: center; /* Centra las imágenes horizontalmente */
+            }
 
-    .image-part {
-        margin: 10px 0; /* Reduce el margen vertical entre las imágenes */
-    }
+            .image-part {
+                margin: 10px 0; /* Reduce el margen vertical entre las imágenes */
+            }
 
-    .image-part img {
-        width: 100%; /* Mantén las imágenes al 100% del contenedor */
-    }
-}
-</style>
+            .image-part img {
+                width: 100%; /* Mantén las imágenes al 100% del contenedor */
+            }
+        }
+    </style>
 
-    </section>
+
 
 <!-- About Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-6">
-                <div class="row gx-3 h-100">
-                    <div class="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
-                        <video class="img-fluid" style="border-radius: 7px;" autoplay loop muted>
-                            <source src="videos/ESCALERA.mov" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
-                        <video class="img-fluid" style="border-radius: 7px;" autoplay loop muted>
-                            <source src="videos/REEL3..mov" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <p class="fw-medium text-uppercase text-primary mb-2">Sobre Nosotros</p>
-                <h1 class="display-5 mb-4">Construcción, operación y mantenimiento de SFV</h1>
-                <p class="mb-4">Especialistas en la construcción y operación del sistema solar fotovoltaico, ofrecemos los servicios de diseño, construcción y supervisión de proyectos eléctricos industriales y comerciales. Contamos con un equipo multidisciplinario de profesionales con amplia experiencia para ofrecer soluciones confiables, económicas y eficientes. </p>
-                <div class="d-flex align-items-center mb-4">
-                    <div class="flex-shrink-0 bg-primary p-4" style="border-radius: 7px;">
-                        <h1 class="display-2" data-toggle="counter-up" style="line-height: 1.8;">8</h1>
-                        <h5 class="text-white" style="line-height: 0.5;">Años de</h5>
-                        <h5 class="text-white" style="line-height: 0.5;">experiencia</h5>
-                    </div>
-                    <div class="ms-4">
-                        <p><i class="fa fa-check text-primary me-2"></i>Monitoreo, control y gestión de los proyectos instalados.</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Construcción para Sistemas comerciales e Industriales.</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Acompañamiento en la puesta en marcha.</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Mantenimiento.</p>
-                        <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Ingeniería del detalle.</p>
-                    </div>
-                </div>
-                <div class="row pt-2 contact-info">
-                    <div class="col-sm-6 email-info">
-                        <div class="d-flex align-items-center" style="font-size: 0.7rem; padding: 7px;">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary" style="width: 30px; height: 30px;">
-                                <i class="fa fa-envelope-open text-white" style="font-size: 18px;"></i> 
-                            </div>
-                            <div class="ms-3">
-                                <p class="mb-2" style="line-height: 0.7;">Email</p>
-                                <h5 class="mb-0" style="line-height: 0.7;">info@smartenergying.com</h5>
-                            </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="row gx-3 h-100">
+                        <div class="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
+                            <video class="img-fluid" style="border-radius: 7px;" autoplay loop muted>
+                                <source src="videos/ESCALERA.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                    </div>
-                    <div class="col-sm-6 phone-info">
-                        <div class="d-flex align-items-center" style="font-size: 0.7rem; padding: 7px;">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary" style="width: 30px; height: 30px;">
-                                <i class="fa fa-phone-alt text-white" style="font-size: 18px;"></i>
-                            </div>
-                            <div class="ms-3">
-                                <p class="mb-2" style="line-height: 0.7;">Telefono </p>
-                                <h5 class="mb-0" style="line-height: 0.7;">+57 310 6977028</h5>
-                            </div>
+                        <div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
+                            <video class="img-fluid" style="border-radius: 7px;" autoplay loop muted>
+                                <source src="videos/REEL3..mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                 </div>
-                
-                <style>
-                /* Estilo por defecto: email y teléfono en la misma fila */
-                .contact-info {
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-                
-                .email-info, .phone-info {
-                    width: 50%;
-                }
-                
-                /* Media query para pantallas de menos de 779px */
-                @media (max-width: 779px) {
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="fw-medium text-uppercase text-primary mb-2">Sobre Nosotros</p>
+                    <h1 class="display-5 mb-4">Construcción, operación y mantenimiento de SFV</h1>
+                    <p class="mb-4">Especialistas en la construcción y operación del sistema solar fotovoltaico, ofrecemos los servicios de diseño, construcción y supervisión de proyectos eléctricos industriales y comerciales. Contamos con un equipo multidisciplinario de profesionales con amplia experiencia para ofrecer soluciones confiables, económicas y eficientes. </p>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="flex-shrink-0 bg-primary p-4" style="border-radius: 7px;">
+                            <h1 class="display-2" data-toggle="counter-up" style="line-height: 1.8;">8</h1>
+                            <h5 class="text-white" style="line-height: 0.5;">Años de</h5>
+                            <h5 class="text-white" style="line-height: 0.5;">experiencia</h5>
+                        </div>
+                        <div class="ms-4">
+                            <p><i class="fa fa-check text-primary me-2"></i>Monitoreo, control y gestión de los proyectos instalados.</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Construcción para Sistemas comerciales e Industriales.</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Acompañamiento en la puesta en marcha.</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Mantenimiento.</p>
+                            <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Ingeniería del detalle.</p>
+                        </div>
+                    </div>
+                    <div class="row pt-2 contact-info">
+                        <div class="col-sm-6 email-info">
+                            <div class="d-flex align-items-center" style="font-size: 0.7rem; padding: 7px;">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary" style="width: 30px; height: 30px;">
+                                    <i class="fa fa-envelope-open text-white" style="font-size: 18px;"></i> 
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2" style="line-height: 0.7;">Email</p>
+                                    <h5 class="mb-0" style="line-height: 0.7;">info@smartenergying.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 phone-info">
+                            <div class="d-flex align-items-center" style="font-size: 0.7rem; padding: 7px;">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary" style="width: 30px; height: 30px;">
+                                    <i class="fa fa-phone-alt text-white" style="font-size: 18px;"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2" style="line-height: 0.7;">Telefono </p>
+                                    <h5 class="mb-0" style="line-height: 0.7;">+57 310 6977028</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <style>
+                    /* Estilo por defecto: email y teléfono en la misma fila */
+                    .contact-info {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    
                     .email-info, .phone-info {
-                        width: 100%;
+                        width: 50%;
                     }
-                }
-                </style>
+                    
+                    /* Media query para pantallas de menos de 779px */
+                    @media (max-width: 779px) {
+                        .email-info, .phone-info {
+                            width: 100%;
+                        }
+                    }
+                    </style>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- About End -->
 
-
-   <!-- Facts Start -->
-   <div class="container-fluid facts my-5 p-5">
-    <div class="row g-5">
-        <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
-            <div class="text-center border p-5">
-                <i class="fa fa-certificate fa-3x text-white mb-3"></i>
-                <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">8</h1>
-                <span class="fs-5 fw-semi-bold text-white">Años de experiencia</span>
+<!-- Facts Start -->
+    <div class="container-fluid facts my-5 p-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">8</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Años de experiencia</span>
+                </div>
             </div>
-        </div>
-        <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
-            <div class="text-center border p-5">
-                <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-                <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">22</h1>
-                <span class="fs-5 fw-semi-bold text-white">Equipo</span>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">22</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Equipo</span>
+                </div>
             </div>
-        </div>
-        <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
-            <div class="text-center border p-5">
-                <img src="/img/ii+_12_11zon.webp" class="iconoCC">
-                <h1 class="display-2 text-primary mb-0" data-toggle="counter-up cienmm">100%</h1>
-                <span class="fs-5 fw-semi-bold text-white">Cobertura Nacional</span>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
+                <div class="text-center border p-5">
+                    <img src="/img/ii+_12_11zon.webp" class="iconoCC">
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up cienmm">100%</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Cobertura Nacional</span>
+                </div>
             </div>
-        </div>
-        <script>
-            $(document).ready(function(){
-                $('[cienmm="counter-up"]').counterUp({
-                    delay: 10,
-                    time: 1000,
-                    formatter: function (n) {
-                        return n + '%';
-                    }
-                });
-            });
-        </script>
-        <style>.iconoCC {
-            width: 60px;  /* Ajusta el tamaño según tus necesidades */
-            height: 60px; /* Ajusta el tamaño según tus necesidades */
-            filter: brightness(0) invert(1); /* Cambia el color del icono a blanco */
-        }</style>
-        <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
-            <div class="text-center border p-5">
-                <i class="fa fa-check-double fa-3x text-white mb-3"></i>
-                <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">3647</h1>
-                <span class="fs-5 fw-semi-bold text-white">Kw instalados</span>
+            <style>
+            .iconoCC {
+                width: 60px;  /* Ajusta el tamaño según tus necesidades */
+                height: 60px; /* Ajusta el tamaño según tus necesidades */
+                filter: brightness(0) invert(1); /* Cambia el color del icono a blanco */
+            }
+            </style>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-check-double fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">3647</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Kw instalados</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Facts End -->
 
 
-
-
-    <!-- Mision Vision  -->
+<section id="mision">
     <div class="container-xxl py-5 ">
         <div class="row g-5 text">
             <div class="col-lg-6 wow fadeInUp text-section" data-wow-delay="0.1s">
@@ -501,7 +488,7 @@
             </div>
         </div>
     </div>
-    
+</section>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
@@ -581,6 +568,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
+    /body>
 
 </html>
