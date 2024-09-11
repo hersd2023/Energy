@@ -248,21 +248,11 @@
     /* Media Query para pantallas pequeñas */
     @media (max-width: 599px) {
     .company-info-container {
-        max-width: 100%;
-        width: 100vw;
-        box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
         flex-direction: column; /* Cambia la dirección del flex a columna */
     }
 
-    .left-text, .right-image {
-        max-width: 100%;
-        margin: 0; /* Quita los márgenes laterales */
-        box-sizing: border-box; /* Incluye márgenes y rellenos en el ancho total */
-    }
-
     .left-text {
-        width: 100vw;
-        margin-bottom: 10px; /* Añade espacio entre el texto y la imagen */
+        margin: -10px; /* Añade espacio entre el texto y la imagen */
     }
 }
 
