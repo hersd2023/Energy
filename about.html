@@ -209,7 +209,9 @@
 
 <style>
     /* Estilos generales */
+
     .company-info-container {
+
         display: flex;
         align-items: center; /* Alinea verticalmente */
         padding: 20px; /* Añade un poco de espacio alrededor del contenido */
@@ -240,23 +242,31 @@
     }
     
     .title {
-        margin-bottom: 20px; /* Ajusta este valor según la separación deseada */
+        margin-bottom: 10px; /* Ajusta este valor según la separación deseada */
     }
 
     /* Media Query para pantallas pequeñas */
     @media (max-width: 599px) {
-        .company-info-container {
-            box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
-            flex-direction: column; /* Cambia la dirección del flex a columna */
-        }
-
-        .left-text, .right-image {
-            width: 85vw; /* Asegura que cada sección ocupe el 100% del ancho */
-        }
-        .left-text {
-            margin-bottom: 10px; /* Añade espacio entre el texto y la imagen */
-        }
+    .company-info-container {
+        max-width: 100%;
+        width: 100vw;
+        box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+        flex-direction: column; /* Cambia la dirección del flex a columna */
     }
+
+    .left-text, .right-image {
+        max-width: 100%;
+        margin: 0; /* Quita los márgenes laterales */
+        box-sizing: border-box; /* Incluye márgenes y rellenos en el ancho total */
+    }
+
+    .left-text {
+        width: 100vw;
+        margin-bottom: 10px; /* Añade espacio entre el texto y la imagen */
+    }
+}
+
+
 </style>
 </section>
 
