@@ -853,9 +853,9 @@ height: 100%;
 #quienesomos{
     margin-left: 5rem;
 }
-
-#contacto-index{
-    width: 100vw;
+#contacto-index {
+    overflow: hidden; /* Oculta el scroll */
+    
 }
 
 #mision{
